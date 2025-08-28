@@ -30,8 +30,10 @@ function buildBaseLists({ landing, lowCost, countryInfo }) {
     selector.push("手动选择", "DIRECT");
 
     // defaultProxies (各分类策略引用) 
-    // 选择节点, 各地区节点, 低倍率节点(可选), 手动选择, 直连
-    const defaultProxies = ["选择节点", ...countryGroupNames];
+    // 选择节点, 落地节点(可选), 各地区节点, 低倍率节点(可选), 手动选择, 直连
+    const defaultProxies = ["选择节点"];
+    if (landing) defaultProxies.push("落地节点");
+    defaultProxies.push(...countryGroupNames);
     if (lowCost) defaultProxies.push("低倍率节点");
     defaultProxies.push("手动选择", "直连");
 
