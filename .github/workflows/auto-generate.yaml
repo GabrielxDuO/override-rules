@@ -1,8 +1,8 @@
 name: Generate Everything We Need And Push to Forgejo
 
 on:
-  push:
-    branches: [ "main" ]
+  # push:
+  #  branches: [ "main" ]
   workflow_dispatch: {}
 
 permissions:
