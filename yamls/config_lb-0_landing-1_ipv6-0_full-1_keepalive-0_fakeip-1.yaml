@@ -74,6 +74,7 @@ proxy-groups:
     type: select
     proxies: &a1
       - 选择代理
+      - 落地节点
       - 香港节点
       - 台湾节点
       - 新加坡节点
